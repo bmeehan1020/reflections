@@ -7,14 +7,19 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	Use git diff to evaluate the code changes made. Make sure only one logical change per commit, and reset --hard any other changes.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+	branches allow you to create different evolving versions of the same projects that can diverge logically.
 
 How do the diagrams help you visualize the branch structure?
+	It proves that commit history is non-linear, and that commits can be ignored if you don't make a branch out of those experimental code changes. 
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	Creates a single branch with access to both commit histories and shows all added features from both evolutions. The branch has two parents.
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+	Auto merging is easier but only in certain unambiguous situations. Merges manually take more time and should only be done if a conflict occurs.
